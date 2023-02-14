@@ -12,3 +12,9 @@ THIS REPOSITORY contains different types of useful files like, web file download
 
     soup = bs(req.content, 'html5lib')
     box = soup.findAll('div', attrs = {'class':'news-card z-depth-1'})
+
+----------------------
+
+# https://www.scrapethissite.com/pages/simple/
+
+![image](https://user-images.githubusercontent.com/50515418/218786512-4b639301-4cec-4053-917f-075b630d98ee.png)
