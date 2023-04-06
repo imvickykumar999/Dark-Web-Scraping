@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup as bs
 import pandas as pd
+import requests
 import socket
 
 def getIP(site):
@@ -28,3 +29,11 @@ df.columns =['Domain Name', 'IP Address']
 df.index +=1
 df.index.name = 'S.No.'
 df.to_csv('IpAddress.csv')
+
+# ---------------------
+
+link = 'https://172.217.204.100/'
+req = requests.get(link, verify=False)
+
+soup = bs(req.content, 'html5lib')
+print(soup)
