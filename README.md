@@ -1,4 +1,8 @@
-# [`Free UpGrad Study Material`](https://colab.research.google.com/drive/1rOyQ4pDIKGKBr_XE8uACBC-mzPYgM0YF?usp=sharing)
+- # [`Free UpGrad Study Material`](https://colab.research.google.com/drive/1rOyQ4pDIKGKBr_XE8uACBC-mzPYgM0YF?usp=sharing)
+
+- ## [`DS - Live Session Recording`](https://docs.google.com/spreadsheets/d/1gBwPWajrrKHkNLyRlmfsrfQmU15_RUpDZJgcvHVYTX8/edit#gid=0)
+
+-----------------
 
     import requests
     from bs4 import BeautifulSoup as bs
