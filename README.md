@@ -6,7 +6,6 @@
 
 ## [`Free UpGrad Study Material and Live Session Recording`](https://colab.research.google.com/drive/1rOyQ4pDIKGKBr_XE8uACBC-mzPYgM0YF?usp=sharing)
 
-
     import requests
     from bs4 import BeautifulSoup as bs
     
@@ -29,9 +28,71 @@
       print(a[1]['href'])
       print()
 
+----------------------
+
+    import requests
+    from bs4 import BeautifulSoup as bs
+    
+    link = 'https://imvickykumar999.github.io/Web-Scraping/'
+    req = requests.get(link)
+    soup = bs(req.content, 'html5lib')
+    
+    s2 = soup.findAll('td', 
+            attrs = {'class':'s2'})
+    
+    s3 = soup.findAll('td', 
+            attrs = {'class':'s3'})
+
+<br>
+
+    for i,j in zip(s2, s3):
+      print('- ', i.text)
+      print(j.a['href'])
+      print()
+
+-------------
+
+## [`Inshorts-news-scraping`](https://github.com/imvickykumar999/Inshorts-news-scraping/blob/main/inshorts%20news.ipynb)
+
+    THIS REPOSITORY contains different types of useful files like, 
+    web file downloader, insta post downloader, eye alignment etc.
+
+---------------------------------
+
+## [`https://haveibeenpwned.com/PwnedWebsites`](https://haveibeenpwned.com/PwnedWebsites)
+
+[![image](https://user-images.githubusercontent.com/50515418/225050010-05f44b21-c1d1-462f-b848-0fb04edae760.png)](https://haveibeenpwned.com/PwnedWebsites#DominosIndia)
+
+----------------------------
+
+    import requests
+    from bs4 import BeautifulSoup as bs
+
+    link = 'https://haveibeenpwned.com/PwnedWebsites'
+    req = requests.get(link)
+
+    soup = bs(req.content, 'html5lib')
+    box = soup.findAll('div', attrs = {'class':'news-card z-depth-1'})
+    
+    # len(box) == 667
+    print(link + box[0].findAll('p')[1].a['href']) 
+    
+----------------------
+
+## [`https://www.scrapethissite.com/pages/simple`](https://www.scrapethissite.com/pages/simple)
+
+![image](https://user-images.githubusercontent.com/50515418/218786512-4b639301-4cec-4053-917f-075b630d98ee.png)
+
+------------
+
 -  Supply Chain ManagementA supply chain is a mechanism through which raw materials from the suppliers are first converted and then placed in the hands of the customers in the form of finished goods.
 https://www.upgrad.com/learn/supply-chain-management/what-is-supply-chain-5274-31522-187492-576396-2949699/
 
+
+        More Upgrad Videos
+    
+<details>
+    
 -  Organisational Behaviour and Human ResourcesLearn Organisational Behaviour and Human Resources concepts at upGrad learn platform.
 https://www.upgrad.com/learn/organisational-behaviour-and-human-resources/introduction-to-strategy-5414-32461-192522-592678-3027654/
 
@@ -94,30 +155,6 @@ https://www.upgrad.com/learn/social-media-and-email-marketing/linkedin-organic-c
 
 -  LawLearn all the law related concepts at upGrad platform
 https://www.upgrad.com/learn/law/why-soft-skills-matters-for-lawyers-5417-32479-192574-592783-3027900/
-
-<br>
-
-    import requests
-    from bs4 import BeautifulSoup as bs
-    
-    link = 'https://imvickykumar999.github.io/Web-Scraping/'
-    req = requests.get(link)
-    soup = bs(req.content, 'html5lib')
-    
-    s2 = soup.findAll('td', 
-            attrs = {'class':'s2'})
-    
-    s3 = soup.findAll('td', 
-            attrs = {'class':'s3'})
-
-<br>
-
-    for i,j in zip(s2, s3):
-      print('- ', i.text)
-      print(j.a['href'])
-      print()
-
-<br>
 
 -  Developing Logic in Programming
 https://live-session-recording-service.s3.ap-south-1.amazonaws.com/production/190484/MU7CJTINhnselJfYn76fBgM6uoyBo1Xg.mp4
@@ -266,35 +303,4 @@ https://live-session-recording-service.s3.ap-south-1.amazonaws.com/production/19
 -  Lead Scoring Case Study Pre-Assignment Live Session
 https://live-session-recording-service.s3.ap-south-1.amazonaws.com/production/192828/j9wRXrfl6xr4lyn2bazZSrO69aqSxOfb.mp4
 
--------------
-
-## [`Inshorts-news-scraping`](https://github.com/imvickykumar999/Inshorts-news-scraping/blob/main/inshorts%20news.ipynb)
-
-    THIS REPOSITORY contains different types of useful files like, 
-    web file downloader, insta post downloader, eye alignment etc.
-
----------------------------------
-
-## [`https://haveibeenpwned.com/PwnedWebsites`](https://haveibeenpwned.com/PwnedWebsites)
-
-> [![image](https://user-images.githubusercontent.com/50515418/225050010-05f44b21-c1d1-462f-b848-0fb04edae760.png)](https://haveibeenpwned.com/PwnedWebsites#DominosIndia)
-
-----------------------------
-
-    import requests
-    from bs4 import BeautifulSoup as bs
-
-    link = 'https://haveibeenpwned.com/PwnedWebsites'
-    req = requests.get(link)
-
-    soup = bs(req.content, 'html5lib')
-    box = soup.findAll('div', attrs = {'class':'news-card z-depth-1'})
-    
-    # len(box) == 667
-    print(link + box[0].findAll('p')[1].a['href']) 
-    
-----------------------
-
-## [`https://www.scrapethissite.com/pages/simple`](https://www.scrapethissite.com/pages/simple)
-
-![image](https://user-images.githubusercontent.com/50515418/218786512-4b639301-4cec-4053-917f-075b630d98ee.png)
+</details>
