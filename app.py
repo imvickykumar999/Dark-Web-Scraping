@@ -26,8 +26,8 @@ if site == '':
     site = 'https://github.com/imvickykumar999'
     # site = 'https://socheers.net/'
 
-# link = getIP(site) # link by IP Address
-link = site, True # link with SSL verified
+link = getIP(site) # link by IP Address
+# link = site, True # link with SSL verified
 
 req = requests.get(link[0], verify=link[1])
 soup = bs(req.content, 'html5lib')
