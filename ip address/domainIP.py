@@ -36,4 +36,4 @@ link = 'https://172.217.204.100/'
 req = requests.get(link, verify=False)
 
 soup = bs(req.content, 'html5lib')
-print(soup)
+# print(soup)
